@@ -57,7 +57,7 @@ public class ApiStepDefs {
     }
     @Then("role is {string}")
     public void role_is(String expectedRole) {
-        response.prettyPrint();
+        response.prettyPrint(); //just to print. If we used manual testing we would know which key to use.
         String actualRole = response.path("role");
 
         Assert.assertEquals(expectedRole,actualRole);

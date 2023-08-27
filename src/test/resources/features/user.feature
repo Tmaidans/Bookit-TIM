@@ -15,7 +15,7 @@ Feature: User Verification
     When I sent get request to "/api/users/me" endpoint
     Then the information about current user from api and database should match
 
-  @db @ui
+  @db @ui @task
   Scenario: three point/layer (UI,API,DATABASE)
     Given user logs in using "team-leader" credentials
     And user is on the my self page
